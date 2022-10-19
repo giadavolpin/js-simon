@@ -24,21 +24,35 @@ while (numeri.length < numeroDiNumeri){
     } 
 //controllo numeri.includes if not(!) numeri.includes allora push
 }
-let numeriHTML = document.getElementById('numeri')
+let numeriHTML = document.getElementById('numeri');
+let padreHTML = document.getElementById('padre');
 //prendo il div dall'HTML con document.getElementById lo assegno ad una variabile.
 numeriHTML.innerHTML = numeri;
 // ciclo for per metterli nel div (pagina) stampare.
-setTimeout(function(nascondi), 3000);
+setTimeout(nascondi, 3000)
+
 
 function nascondi(){
-    removeEventListener(numeri)
-} 
-
+    padreHTML.removeChild(numeriHTML)
+}
 //setTimeout function di 3 secondi. (3000)
 // function nascondere i numeri dallo schermo
+
+
+
+
 // chiedere i numeri all'utente (Input)
+let numUtente document.getElementById('numberUtente');
+let contenNumUt = []
+//creo un array per mettere dentro i numeri dell'utente.
+if (!contenNumUt.includes(numUtente)){
+    contenNumUt.push(numUtente);
+}
 // funzione che mi controlla i numeri inseriti dall'utente
-// numeri inseriti e score
+
+
+//far comparire i numeri giusti dell'utente 
+//far comparire il numero di quanti numeri ha azzeccato l'utente
 
 
 function getRndInteger(min, max) {
