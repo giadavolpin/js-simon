@@ -42,16 +42,18 @@ function nascondi(){
 
 
 // chiedere i numeri all'utente (Input)
-let numUtente document.getElementById('numberUtente');
+let numUtente = document.getElementById('numberUtente');
 let contenNumUt = []
 //creo un array per mettere dentro i numeri dell'utente.
+bottone.addEventListener('click', NumeriGiusti);
+function NumeriGiusti(){
 if (!contenNumUt.includes(numUtente)){
     contenNumUt.push(numUtente);
 }
+}
 // funzione che mi controlla i numeri inseriti dall'utente
-
-
 //far comparire i numeri giusti dell'utente 
+
 //far comparire il numero di quanti numeri ha azzeccato l'utente
 
 
